@@ -1,0 +1,131 @@
+
+.container {
+  padding: 16px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  margin-right: 33%;
+  top: 0;
+  width: 52%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(255, 249, 249, 0); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+#h4-new{
+    margin-top: 50px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: rgb(177, 177, 177);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color:#498de6;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+  .h6-notes .p-notes .h2-notes{
+    font-weight:normal;
+  }
+
+  .h6-notes{
+    font-size:16px;
+  }
+
+  .date-notes
+  {
+    margin-top:-8px;
+    font-size:14px;
+  }
+
+  .h2-notes {
+    font-size:17px;
+    font-weight: bold;
+  }
+ 
+  .ul-notes .li-notes{
+    list-style:none;
+  }
+  .ul-notes{
+    overflow:hidden;
+    padding:3em;
+  }
+  .ul-notes .li-notes .a-notes{
+    text-decoration:none;
+    color:#000;
+    background:#a0dceb;
+    display:block;
+    height:12em;
+    width:12em;
+    padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transform:rotate(-6deg);
+
+  }
+  .ul-notes .li-notes{
+    margin-right:25%;
+    
+  }
+  .ol-notes{text-align:center;}
+  .ol-notes .li-notes{display:inline;padding-right:1em;}
+  .ol-notes .li-notes .a-notes{color:#fff;}
+
+  .ul-notes .i-notes:nth-child(even) a{
+    transform:rotate(4deg);
+    position:relative;
+    top:5px;
+  }
+  .ul-notes .i-notesli:nth-child(3n) a{
+    transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+  }
+  .ul-notes .li-notes:nth-child(5n) a{
+    transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+  }
+  .ul-notes .li-notes .a-notes:hover,.ul-notes .li-notes .a-notes:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.35);
+    position:relative;
+    z-index:5;
+  }
+
+ 
