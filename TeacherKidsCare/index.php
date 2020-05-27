@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="rtl">
-
 <?php 
 include 'Templates\DB.php';
-?>
-
-<?php 
 include 'Templates\head.php';
-?>
-<title>KidsCare-Login</title>
 
+?>
+
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+<title>KidsCare-Login</title>
 
 <body class="vertical-layout vertical-menu 1-column  bg-full-screen-image blank-page blank-page" data-open="click"
     data-menu="vertical-menu" data-color="bg-gradient-x-purple-blue" data-col="1-column">
@@ -77,8 +74,9 @@ include 'Templates\head.php';
     </div>
 
     <!-- END: Content-->
-    <?php 
-
+<?php 
+include 'Templates\DB.php';
+include 'Templates\head.php';
 include 'Templates\JS.php';
 ?>
 

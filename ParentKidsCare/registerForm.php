@@ -42,7 +42,7 @@ include 'Templates\head.php';
                                 <label class="col-xl-3">ת.ז</label><input type="text" class="form-control round col-md-8" style ="display: inline-block" name="idNum" required ></div>
                                 <div class=form-group row>
                                     <label class="col-xl-3">מין</label>
-                                <input type="radio"   style ="display: inline-block" name="gender" value="זכר" checked required ><label > זכר</label>
+                                <input type="radio"  style ="display: inline-block" name="gender" value="זכר" checked required ><label > זכר</label>
                                 <input type="radio"  style ="display: inline-block" name="gender" value="נקבה" checked required ><label> נקבה</label>
                                 </div>
                                 <div class=form-group row>
@@ -63,7 +63,7 @@ include 'Templates\head.php';
                                 <label class="col-xl-3">תרופות</label><textarea  class="form-control round col-md-8" style ="display: inline-block" name="medicines"  ></textarea></div>
                                 <div></div>
                                 <label class="col-xl-3" style = "margin-bottom:3%">העלה תמונה</label>
-                                <input  type="file"  name="fileToUpload" id="fileToUpload" required  /> <br>
+                                <input  type="file"  name="fileToUpload" id="fileToUpload" /> <br>
                                 <P class="text-center" style = "margin-left:10%; margin-top:3%; font-size: 1rem "> מומלץ להעלות תמונה מרובעת</P>
                                 <input type="hidden" name="status" value="3" hide >
                                 <div class="form-actions center">

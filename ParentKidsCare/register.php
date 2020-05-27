@@ -1,14 +1,13 @@
 
 <?php
 
- include 'Templates\DB.php';
-
+ include ('Templates/DB.php');
 
  $target_dir = "../uploads/";
  $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
  $uploadOk = 1;
  $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
- // Check if image file is a actual image or fake image
+
  if(isset($_POST["submit"])) {
      $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
      if($check !== false) {
@@ -18,7 +17,7 @@
      }
  }
 
- if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) 
+ if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
    
 $sql = "INSERT INTO accounts (username, password, email, fullName, idNum, gender, birthday, parentName1,
  phone1, parentName2, phone2, address, allergies, medicines, fileToUpload, status)
@@ -29,6 +28,24 @@ $sql = "INSERT INTO accounts (username, password, email, fullName, idNum, gender
     '".$_POST["phone1"]."', '".$_POST["parentName2"]."',
 	'".$_POST["phone2"]."', '".$_POST["address"]."', '".$_POST["allergies"]."',
      '".$_POST["medicines"]."', '". basename($_FILES["fileToUpload"]["name"])."', '".$_POST["status"]."' )";
+ }
+else {
+    $target_dir = "../uploads/profile.PNG";
+    $target_file = $target_dir;
+    $uploadOk = 1;
+    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+       
+$sql = "INSERT INTO accounts (username, password, email, fullName, idNum, gender, birthday, parentName1,
+phone1, parentName2, phone2, address, allergies, medicines, fileToUpload, status)
+VALUES ('".$_POST["username"]."', '".$_POST["password"]."',
+ '".$_POST["email"]."', '".$_POST["fullName"]."',
+  '".$_POST["idNum"]."', '".$_POST["gender"]."',
+  '".$_POST["birthday"]."', '".$_POST["parentName1"]."',
+   '".$_POST["phone1"]."', '".$_POST["parentName2"]."',
+   '".$_POST["phone2"]."', '".$_POST["address"]."', '".$_POST["allergies"]."',
+    '".$_POST["medicines"]."', '".$target_file."', '".$_POST["status"]."' )";
+
+}
 
 if ($conn->query($sql)==false) {
     echo "Error ".
@@ -43,7 +60,7 @@ $conn->close();
 <html class="loading" lang="en" data-textdirection="rtl">
 
 <?php
-     include 'Templates\head.php';
+     include ('Templates/head.php');
      ?>
 
 <body class="vertical-layout vertical-menu 1-column  bg-full-screen-image blank-page blank-page" data-open="click" data-menu="vertical-menu" data-color="bg-gradient-x-purple-blue" data-col="1-column">
@@ -86,7 +103,7 @@ $conn->close();
     <!-- END: Content-->
 
     <?php
-     include 'Templates\JS.php';
+     include ('Templates/JS.php');
      ?>
 
 </body>

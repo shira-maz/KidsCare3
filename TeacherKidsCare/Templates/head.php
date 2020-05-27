@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <link rel="apple-touch-icon" href="../app-assets/images/ico/logo.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/logo.png">
-    <link
-        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alef&family=Rubik&display=swap" rel="stylesheet">
     <!-- BEGIN: Vendor CSS-->
@@ -35,7 +33,7 @@
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/style-rtl.css">
     <!-- END: Custom CSS-->
 
 </head>
